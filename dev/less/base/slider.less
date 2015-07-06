@@ -55,7 +55,7 @@
 	color: #fff;
 	font-family: @font-text;
 	font-size: 1.125em;
-	 line-height: 1.2em;
+	line-height: 1.2em;
 	@media @mobile{
 		text-align: left;
 		white-space: normal;
@@ -109,12 +109,9 @@
 }
 .exp-slider__author{
 	margin: 0 auto 40px;
-	text-align: center;
-	
-	position: relative;
-	
-	width: 290px;
-	
+	text-align: center;	
+	position: relative;	
+	width: 290px;	
 }
 
 .exp-slider__text_quote:before{
@@ -180,8 +177,8 @@
 
 	&.ei-right{
 		background-position: 18px -34px;
-		  width: 16px;
-		  height: 16px;
+		width: 16px;
+		height: 16px;
 	}
 	&.ei-left{
 		background-position: 18px -18px;
@@ -234,7 +231,7 @@
 		background: @color-blue-dark;
 		height: 100px;
 		position: absolute;
-		transform: rotate(-4deg);
+		.transform(rotate(-4deg));
 		bottom: 10px;
 		transform-origin: left bottom 0;
   		.mobile-hide();
@@ -244,9 +241,9 @@
 		background: @color-blue-dark;;
 		height: 100px;
 		position: absolute;
-		transform:rotate(1.5deg);
 		bottom: 0;
-		transform-origin: right bottom 0;
+		.transform(rotate(1.5deg));
+		.transform-origin(right bottom 0);
 		.mobile-hide();
 	}
 }

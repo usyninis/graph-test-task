@@ -1,32 +1,39 @@
 .border-radius(@r: 3px) {
   -webkit-border-radius: @r;
-  -moz-border-radius: @r;
-  border-radius: @r; 
+  -moz-border-radius:    @r;
+  border-radius:         @r; 
 }
 .box-shadow(@shadow) {
   -webkit-box-shadow: @shadow;
-  -moz-box-shadow: @shadow;
-  box-shadow: @shadow; 
+  -moz-box-shadow:    @shadow;
+  box-shadow:         @shadow; 
 }
 
 .opacity (@opacity: 0.5) {
 	-webkit-opacity: 	@opacity;
 	-moz-opacity: 		@opacity;
-	opacity: 		@opacity;
+	opacity: 		    @opacity;
 }
 .transition (@transition) {
 	-webkit-transition: @transition;  
 	-moz-transition:    @transition;
 	-ms-transition:     @transition; 
 	-o-transition:      @transition;  
-	transition:      @transition;  
+	transition:         @transition;  
 }
 .transform(@string){
-	-webkit-transform: @string;
+	-webkit-transform:   @string;
 	-moz-transform: 	 @string;
 	-ms-transform: 		 @string;
 	-o-transform: 		 @string;
-	transform: 		 @string;
+	transform: 		     @string;
+}
+.transform-origin(@string){
+	-webkit-transform-origin: @string;
+	-moz-transform-origin: 	  @string;
+	-ms-transform-origin: 	  @string;
+	-o-transform-origin:	  @string;
+	transform-origin: 		  @string;
 }
 .mobile-hide(){
 	@media @mobile {
